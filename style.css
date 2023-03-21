@@ -1,4 +1,5 @@
 /* CSS Reset */
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,28 @@
 
 html{
     scroll-behavior: smooth;
+}
+.btn:hover{
+
+    animation: pulse; 
+    animation-duration: 2s; 
+
+
+
+}
+#img:hover{
+
+    animation: pulse; 
+    animation-duration: 1s; 
+    box-shadow:rgba(0,0,0,1) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+
+
+}
+.zoomin{
+
+    
+    animation:zoomInDown;
+    animation-duration: 2s; 
 }
 
 /* CSS Variables */
@@ -20,6 +43,10 @@ html{
     position: sticky;
     z-index: 1000;
     top: 0px;
+    transition : box-shadow 2s;
+}
+#navbar:hover{
+    box-shadow:rgba(0,0,0,1) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 #navbar::before{
@@ -42,6 +69,7 @@ html{
 #logo img{
     height: 59px;
     margin: 3px 6px;
+    transition : box-shadow 2s;
 }
 
 
@@ -99,17 +127,17 @@ html{
 }
 
 #home p{
-    color:rgb(255, 247, 0);;
+    color:rgb(255, 247, 0);
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Bree Serif', serif;
 }
-/* Services Section */
-#services{
+
+#greatknocks{
     margin: 34px;
     display: flex;
 }
-#services .box{ 
+#greatknocks .box{ 
     border: 2px solid rgb(236, 207, 47);
     padding: 15px;
     margin: 2px 55px;
@@ -117,19 +145,20 @@ html{
     background: #f2f2f2;
     margin-bottom: 20px;
   ;
-    transition : width 1.2s,height 1.2s,margin 1.2s;
+   transition : box-shadow 2s;
 }
 .box:hover{
     transform :scale(1.1);
     cursor: pointer;
+    box-shadow:rgba(0,0,0,1) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     }
-#services .box img{ 
+#greatknocks .box img{ 
    height: 160px;
    margin: auto;
    display: block;
 }
 
-#services .box p{
+#greatknocks .box p{
     font-family: 'Bree Serif', serif;
     text-align: justify;
 
@@ -156,21 +185,31 @@ html{
     align-items: center;
     
 }
+#linker{
 
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+  
+}
 .client-item{
     padding: 34px;
     
 }
-#vi{box-shadow: 3px 3px 3px 0.3px rgb(247, 243, 8);
+#vi{
     width: 320px;
-  
+   border: 3px solid rgb(255, 247, 0);
     height: 240px;
+    object-fit: cover;
 transition : width 2s,height 2s,box-shadow 2s;
 
 }
 #vi:hover{
 transform :scale(1.2);
+box-shadow:rgba(0,0,0,1) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
+
 
 #clients img{
     height: 124px;
