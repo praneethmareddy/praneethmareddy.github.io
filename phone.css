@@ -23,12 +23,12 @@
     font-size: 13px;
 }
 
-/* Services section  */
-#services{
+/* greatknocks section  */
+#greatknocks{
     flex-direction: column;
 }
 
-#services .box { 
+#greatknocks.box { 
     padding: 14px;
     margin: 2px 0px; 
     margin-bottom: 20px;
