@@ -4,7 +4,10 @@
     margin: 0;
     padding: 0;
 }
-
+body {
+	
+	background: linear-gradient(to right, white , white); /* Standard syntax */
+}
 html{
     scroll-behavior: smooth;
 }
@@ -13,7 +16,7 @@ html{
     animation: pulse; 
     animation-duration: 2s; 
 
-
+   
 
 }
 #img:hover{
@@ -78,6 +81,7 @@ html{
 #navbar ul{
     display: flex;
     font-family: 'Baloo Bhai', cursive;
+    width :100%;
 }
 
 #navbar ul li{ 
@@ -289,3 +293,26 @@ footer{
 .center{
     text-align: center;
 }
+#y {
+    margin-left: auto;
+}
+
+
+.x {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;  */
+    /* appearance: none; */
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+  }
+  .x::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 0.7px solid #ffd814e7;
+  }
+  /* .x::-moz-color-swatch {
+    border-radius: 50%;
+    border: 0.7px solid #000000;
+  } */
